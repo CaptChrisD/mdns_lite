@@ -147,7 +147,7 @@ defmodule MdnsLite.Options do
   end
 
   defp has_vintage_net?() do
-    Application.loaded_applications() |> Enum.find_value(fn {app, _, _} -> app == :iex end)
+    Application.loaded_applications() |> Enum.find_value(fn {app, _, _} -> app == :vintage_net end)
   end
 
   # This used to be called :host, but now it's :hosts. It's a list, but be
