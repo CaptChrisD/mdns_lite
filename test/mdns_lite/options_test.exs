@@ -13,7 +13,8 @@ defmodule MdnsLite.OptionsTest do
              hosts: ["#{hostname}"],
              services: MapSet.new(),
              ttl: 120,
-             instance_name: :unspecified
+             instance_name: :unspecified,
+             if_monitor: MdnsLite.InetMonitor
            }
   end
 
